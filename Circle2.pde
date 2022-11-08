@@ -1,3 +1,10 @@
+/**
+Professor: Hyesung Park
+Student: Joseph Grados
+Course: ITEC 2150
+Date:11/8/2022
+Purpose: An example of recursion in a animated java program.
+**/
 void setup(){
   size(800,800);
   noStroke();
@@ -5,17 +12,17 @@ void setup(){
 }
 
 void draw(){
-  drawCircle(width/2,280, 6);
+  drawCircle(height/2,280, 6);
 }
 
-void drawCircle(int x,int radius, int level){
+void drawCircle(int y,int radius, int level){
   float tt = 126 * level/4.0;
   fill(tt);
   
-  ellipse(x, height/2,radius*2, radius*2);
+  ellipse(width/2, y ,radius*2, radius*2);
   if(level > 1){
     level = level - 1;
-    drawCircle(x-radius/2,radius/2, level);
-    drawCircle(x + radius/2, radius/2,level);
+    drawCircle(y-radius/2,radius/2, level);
+    drawCircle(y + radius/2, radius/2,level);
   }
 }
