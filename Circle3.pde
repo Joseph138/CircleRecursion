@@ -1,8 +1,8 @@
  /**
 Professor: Hyesung Park
 Student: Joseph Grados
-Course: ITEC 2140
-Date:11/7/2022
+Course: ITEC 2150
+Date:11/8/2022
 Purpose: An example of recursion in a animated java program.
 **/
 void setup(){
